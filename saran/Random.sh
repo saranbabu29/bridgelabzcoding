@@ -1,9 +1,5 @@
-X=$((RANDOM%999))
-echo "number = $X"
-echo "number1 = $X"
-echo "number2 = $X"
-RANDOM=$$
-for i in 'seq 10'
+for (( i=1;i<10;i++))
 do
-	echo $RANDOM
+x=$((RANDOM%999))
+echo "Random Number $x"
 done
