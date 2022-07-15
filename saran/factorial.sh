@@ -1,9 +1,9 @@
-read -p "Enter a Number : " num
-echo num
+read -p "Enter a number : " num
+
 fact=1
-while [ $num > 1 ]
+
+for((i=2;i<=num;i++))
 do
-	fact=$((fact * num))
-	num=$((num - 1))
+  fact=$((fact * i))
 done
-echo $fact
+echo " $num factorial is $fact"
